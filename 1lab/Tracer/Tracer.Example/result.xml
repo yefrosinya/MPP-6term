@@ -1,0 +1,12 @@
+<root>
+  <threads>
+    <thread id="1" time="159ms">
+      <method name="ExecuteMainLogic" class="DemoScene" time="159ms">
+        <method name="MethodWithInnerCall" class="DemoScene" time="104ms" />
+      </method>
+    </thread>
+    <thread id="4" time="31ms">
+      <method name="SimpleMethod" class="DemoScene" time="31ms" />
+    </thread>
+  </threads>
+</root>

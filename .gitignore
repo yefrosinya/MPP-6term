@@ -1,0 +1,37 @@
+### .NET Core ###
+bin/
+obj/
+out/
+[Bb]in/
+[Oo]bj/
+
+### JetBrains Rider ###
+.idea/
+*.sln.iml
+*.idea
+
+### Visual Studio ###
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+
+### NuGet ###
+packages/
+*.nuget.props
+*.nuget.targets
+
+### OS Specific ###
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+### Результаты компиляции ###
+*.dll
+*.exe
+*.pdb
+*.log

@@ -1,0 +1,19 @@
+threads:
+- id: 1
+  time: 159ms
+  methods:
+  - name: ExecuteMainLogic
+    class: DemoScene
+    time: 159ms
+    methods:
+    - name: MethodWithInnerCall
+      class: DemoScene
+      time: 104ms
+      methods: 
+- id: 4
+  time: 31ms
+  methods:
+  - name: SimpleMethod
+    class: DemoScene
+    time: 31ms
+    methods: 

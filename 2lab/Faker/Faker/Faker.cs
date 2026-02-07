@@ -1,4 +1,3 @@
-using System.Collections.Concurrent;
 using System.Reflection;
 using Faker.Generators;
 
@@ -15,7 +14,11 @@ public class Faker
     {
         _config = config ?? new FakerConf();
         _generators.Add(new IntGenerator());
+        _generators.Add(new LongGenerator());
+        _generators.Add(new FloatGenerator());
+        _generators.Add(new DoubleGenerator());
         _generators.Add(new StringGenerator());
+        _generators.Add(new DateTimeGenerator());
         _generators.Add(new ListGenerator());
     }
 
@@ -89,4 +92,3 @@ public class Faker
         }
     }
 }
-

@@ -14,7 +14,7 @@ public class PluginLoader
             return serializers;
         }
 
-        ResolveEventHandler resolveHandler = (sender, args) =>
+        ResolveEventHandler resolveHandler = (sender, args) => // делегат для обработки событий, возникающих при сбое разрешения (поиска) сборки или ресурса
         {
             var assemblyName = new AssemblyName(args.Name);
             var dllPath = Path.Combine(pluginsDirectory, $"{assemblyName.Name}.dll");

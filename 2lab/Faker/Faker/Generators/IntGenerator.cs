@@ -6,6 +6,6 @@ public class IntGenerator : IValueGenerator
 
     public object Generate(Type typeToGenerate, GeneratorContext context)
     {
-        return context.Random.Next(int.MinValue, int.MaxValue);
+        return (int)context.Random.NextInt64(int.MinValue, (long)int.MaxValue + 1);
     }
 }

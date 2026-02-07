@@ -20,5 +20,5 @@ internal class MethodTracer
 internal class ThreadTracer
 {
     public List<MethodTracer> RootMethods { get; } = new();
-    public Stack<MethodTracer> MethodStack { get; } = new();
+    public Stack<MethodTracer> MethodStack { get; } = new(); // стек текущих методов для вложенности
 }
